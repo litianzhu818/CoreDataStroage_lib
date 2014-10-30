@@ -28,8 +28,6 @@
 
 /* Begin PBXFileReference section */
 		E7BD80061A01D75200D05815 /* libCoreDataStorage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCoreDataStorage.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7BD80111A01D75200D05815 /* CoreDataStorageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataStorageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7BD80141A01D75200D05815 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7BD801D1A01D77300D05815 /* CoreDataStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStorage.h; sourceTree = "<group>"; };
 		E7BD801E1A01D77300D05815 /* CoreDataStorageProtected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStorageProtected.h; sourceTree = "<group>"; };
 		E7BD801F1A01D77300D05815 /* CoreDataStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStorage.m; sourceTree = "<group>"; };
@@ -43,13 +41,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E7BD800E1A01D75200D05815 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -57,7 +48,6 @@
 			isa = PBXGroup;
 			children = (
 				E7BD80081A01D75200D05815 /* CoreDataStorage */,
-				E7BD80121A01D75200D05815 /* CoreDataStorageTests */,
 				E7BD80071A01D75200D05815 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,7 +56,6 @@
 			isa = PBXGroup;
 			children = (
 				E7BD80061A01D75200D05815 /* libCoreDataStorage.a */,
-				E7BD80111A01D75200D05815 /* CoreDataStorageTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,22 +68,6 @@
 				E7BD801F1A01D77300D05815 /* CoreDataStorage.m */,
 			);
 			path = CoreDataStorage;
-			sourceTree = "<group>";
-		};
-		E7BD80121A01D75200D05815 /* CoreDataStorageTests */ = {
-			isa = PBXGroup;
-			children = (
-				E7BD80131A01D75200D05815 /* Supporting Files */,
-			);
-			path = CoreDataStorageTests;
-			sourceTree = "<group>";
-		};
-		E7BD80131A01D75200D05815 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				E7BD80141A01D75200D05815 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,23 +90,6 @@
 			productReference = E7BD80061A01D75200D05815 /* libCoreDataStorage.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		E7BD80101A01D75200D05815 /* CoreDataStorageTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E7BD801A1A01D75200D05815 /* Build configuration list for PBXNativeTarget "CoreDataStorageTests" */;
-			buildPhases = (
-				E7BD800D1A01D75200D05815 /* Sources */,
-				E7BD800E1A01D75200D05815 /* Frameworks */,
-				E7BD800F1A01D75200D05815 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = CoreDataStorageTests;
-			productName = CoreDataStorageTests;
-			productReference = E7BD80111A01D75200D05815 /* CoreDataStorageTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -144,9 +100,6 @@
 				ORGANIZATIONNAME = "Peter Lee";
 				TargetAttributes = {
 					E7BD80051A01D75200D05815 = {
-						CreatedOnToolsVersion = 6.0;
-					};
-					E7BD80101A01D75200D05815 = {
 						CreatedOnToolsVersion = 6.0;
 					};
 				};
@@ -164,20 +117,9 @@
 			projectRoot = "";
 			targets = (
 				E7BD80051A01D75200D05815 /* CoreDataStorage */,
-				E7BD80101A01D75200D05815 /* CoreDataStorageTests */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		E7BD800F1A01D75200D05815 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E7BD80021A01D75200D05815 /* Sources */ = {
@@ -185,13 +127,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7BD80201A01D77300D05815 /* CoreDataStorage.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E7BD800D1A01D75200D05815 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,36 +225,6 @@
 			};
 			name = Release;
 		};
-		E7BD801B1A01D75200D05815 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = CoreDataStorageTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		E7BD801C1A01D75200D05815 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = CoreDataStorageTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -339,14 +244,7 @@
 				E7BD80191A01D75200D05815 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		E7BD801A1A01D75200D05815 /* Build configuration list for PBXNativeTarget "CoreDataStorageTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E7BD801B1A01D75200D05815 /* Debug */,
-				E7BD801C1A01D75200D05815 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
